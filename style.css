@@ -1,0 +1,100 @@
+	* { margin: 0px; padding: 0px; box-sizing: border-box; }
+	html, body, div, span{ border: 0; font-family: inherit; font-size: 100%; font-weight: inherit; margin: 0; outline: 0; padding: 0; vertical-align: baseline; }
+	figure, footer, header, menu, nav{ display: block; }
+
+/* <<< Header >>> */
+	.container { width: 100%; padding: 0px; }
+	header { width: 100%; }
+
+/* <<< Navigation >>> */
+	.navbar { padding: 0px!important; margin: 0px!important; border-bottom-style: solid; border-bottom-color: #acacac; }
+	.navbar .nav-tabs { float: right; width: 100%; margin: auto; background-color: white; text-align: center; }
+	.navbar .nav-tabs ul { list-style: none; margin: auto; display:table; border: none; }
+	.navbar .nav-tabs li { width: 2%; display:table-cell; float: none; padding-top: 12px; padding-bottom: 11px; }
+	.navbar .nav-tabs button { background-color: transparent; border: none; color:#acacac; }
+	.navbar .nav-tabs .glyphicon { display: block; position: relative; font-size: 28px; bottom: 0; transition: 0.3s; color: #333; }
+	.navbar .nav-tabs .menu-text { display: block; position: relative; font-size: 22px; bottom: 0; transition: 0.3s; }
+
+	section { width: 100%; }
+	/* <<< Main Section >>> */
+	.main-section { width: 100%; margin: auto; text-align: center; position: relative; float: right; top: 83px; background-color: #e8e0f4; height: 100vh; }
+	.main-section h1 { margin: 0px; padding: 0px; color: transparent; font-size: 1px; }
+	.main-section ul { margin: 0px; }
+	.main-section li { display: table; width: 100%; }
+	.main-section .row { margin: 0px; text-align: center; display: table; width: 100%; }
+	
+	.main-section .Playlists { float: right; position: relative; margin: auto; top: 0px; background-color: #e8e0f4; padding-left: 3%; padding-right: 3%; }
+	.main-section .Playlists .btn-group { float: right; width: 100%; margin: auto; padding-top: 10px; display: none; }
+	.main-section .Playlists .btn-group button { width: 100%; background-color: #936ac7!important; color: white!important; padding-top:10px!important; padding-bottom: 10px!important; border-radius: 10px!important; }
+	.main-section .Playlists .row .col-lg-6 button { background-color: transparent; border-color: transparent; display: table; font-size: 16px; width: 100%; height: 80px; cursor: pointer; border-bottom: solid 1px #acacac; }
+	.main-section .Playlists .row .col-lg-6 button:active { background-color: #8A2BE2; }
+	.main-section .Playlists .row .col-lg-6 img { border: solid 2px #acacac; background: #979797; height: 50px; width: 50px; float: left; margin: 0px; display: table-cell; }
+	.main-section .Playlists .row .col-lg-6 .list-name { color: #936ac7; font-size: 20px; display: table-cell; float: left; padding-left: 20px; padding-top: 10px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 200px; }
+	.main-section .Playlists .row .col-lg-6 .glyphicon { font-size: 28px; vertical-align: middle; color: #7f7f7f; display: table-cell; float: right; padding-right: 10px; padding-top: 10px; }
+
+	.main-section .Library { float: right; width: 100%; position: relative; margin: auto; top: 0px; background-color: #e8e0f4; padding-left: 3%; padding-right: 3%; display: none; }
+	.main-section .Library .btn-group { float: right; width: 100%; margin: auto; padding-top: 10px; display: none; }
+	.main-section .Library .btn-group li { display: inline-block; width: 45%; text-align: center; padding-left: 5%; padding-right: 5%; font-size: 16px; }
+	.main-section .Library .btn-group button { width: 100%; background-color: #936ac7!important; color: white!important; padding-top:10px!important; padding-bottom: 10px!important; border-radius: 10px!important; }
+	.main-section .Library .btn-group .sort-default { box-shadow: -1px 1px 6px #333 inset; }
+	.main-section .Library .row .col-lg-6 .glyphicon { font-size: 28px; vertical-align: middle; color: #7f7f7f; display: table-cell; float: right; }
+	.main-section .Library .row .col-lg-6 .song-lists .song-item { background-color: transparent; border-color: transparent; display: table; font-size: 16px; width: 100%; height: 80px; cursor: pointer; border-bottom: solid 1px #acacac; }
+	.main-section .Library .row .col-lg-6 .song-lists .song-item img { border: solid 2px #acacac; background: #979797; height: 50px; width: 50px; float: left; margin-top: 15px; display: table-cell; }
+	.main-section .Library .row .col-lg-6 .song-lists .song-item .song-desc { color: #936ac7; font-size: 20px; display: table-cell; float: left; padding-top: 20px; padding-left: 20px; width: 60%; }
+	.main-section .Library .row .col-lg-6 .song-lists .song-item .title { color: #936ac7; font-size: 20px; float: left; padding-left: 10px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 100%; text-align: left; max-width: 200px; }
+	.main-section .Library .row .col-lg-6 .song-lists .song-item .artist { color: #acacac; font-size: 15px; float: left; padding-left: 10px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 100%; text-align: left; max-width: 200px; }
+	.main-section .Library .row .col-lg-6 .song-lists .song-item button { background-color: transparent; border-color: transparent; font-size: 16px; height: 78px; cursor: pointer; padding-right: 5px; float: right; }
+	
+	.main-section .modal { display: none; position: fixed; padding-top: 76px; margin-top: 84px; overflow: auto; background-color: rgba(0,0,0,0.4); }
+	.main-section .modal .modal-wrapper { display: inline-block; width: 70%; background-color: #e8e0f4; }
+	.main-section .modal .modal-wrapper .modal-header { display: table; width: 100%; font-size: 20px; color: #7f7f7f; padding-top: 10px; }
+	.main-section .modal .modal-wrapper .modal-header .close-btn { display: table-cell; float: right; background-color: transparent; border-color: transparent; }
+	.main-section .modal .modal-wrapper .modal-header .close-btn-user { display: table-cell; float: right; background-color: transparent; border-color: transparent; }
+	.main-section .modal .modal-wrapper .modal-header .modal-header-text { display: table-cell; float: left; padding-left: 5%; }
+	.main-section .modal .modal-wrapper .modal-list { display: table; width: 100%; }
+	.main-section .modal .modal-wrapper .modal-list li { display: table-cell; width: 100%; float: left; font-size: 20px; text-align: left; }
+	.main-section .modal .modal-wrapper .modal-list button { width: 100%; background-color: transparent; border-color: transparent; color: #936ac7; padding-bottom: 10px; }
+	.main-section .modal .modal-wrapper .modal-list .list-name { width: 100%; text-align: left; float: left; padding-left: 10%; }
+	.main-section .modal .modal-wrapper input { margin: 0% 3% 3% 3%; width: 75%; }
+	.main-section .modal .modal-wrapper .save-new-playlist-btn { width: 75%; background-color: #936ac7!important; color: white!important; padding-top: 10px!important; padding-bottom: 10px!important; border-radius: 10px!important; margin-bottom: 15px; }
+
+	/*.main-section .modal-user { display: none; position: fixed; padding-top: 76px; margin-top: 84px; overflow: auto; background-color: rgba(0,0,0,0.4); }
+	.main-section .modal-user .modal-wrapper-user { display: inline-block; width: 70%; background-color: #e8e0f4; }
+	.main-section .modal-user .modal-wrapper-user .modal-header-user { display: table; width: 100%; font-size: 20px; color: #7f7f7f; padding-top: 10px; }
+	.main-section .modal-user .modal-wrapper-user .modal-header-user .close-btn { display: table-cell; float: right; background-color: transparent; border-color: transparent; }
+	.main-section .modal-user .modal-wrapper-user .modal-header-user .modal-header-text-user { display: table-cell; float: left; padding-left: 5%; }
+	.main-section .modal-user .modal-wrapper-user .modal-list-user { display: table; width: 100%; }
+	.main-section .modal-user .modal-wrapper-user .modal-list-user li { display: table-cell; width: 100%; float: left; font-size: 20px; text-align: left; }
+	.main-section .modal-user .modal-wrapper-user .modal-list-user button { width: 100%; background-color: transparent; border-color: transparent; color: #936ac7; padding-bottom: 10px; }
+	.main-section .modal-user .modal-wrapper-user .modal-list-user .list-name { width: 100%; text-align: left; float: left; padding-left: 10%; }
+	.main-section .modal-user .modal-wrapper-user input { margin: 0% 3% 3% 3%; width: 75%; }
+	.main-section .modal-user .modal-wrapper-user .save-new-playlist-btn { width: 75%; background-color: #936ac7!important; color: white!important; padding-top: 10px!important; padding-bottom: 10px!important; border-radius: 10px!important; margin-bottom: 15px; }*/
+
+	.main-section .Search { float: right; width: 100%; position: relative; margin: auto; top: 0px; background-color: #e8e0f4; padding-left: 3%; padding-right: 3%; display: none; }
+	.main-section .Search .navbar-form { float: right; width: 100%; margin: auto; padding-top: 10px; padding-left: 0px; padding-right: 0px; padding-bottom: 0px; font-size: 0px; }
+	.main-section .Search .navbar-form .form-group { border-radius: 10px; width: 100%; }
+	.main-section .Search .navbar-form .form-group .form-control { background-color: #dcd9df; width: 100%; }
+	.main-section .Search .row .col-lg-6 .search-playlist-button { background-color: transparent; border-color: transparent; display: table; font-size: 16px; width: 100%; height: 80px; cursor: pointer; border-bottom: solid 1px #acacac; }
+	.main-section .Search .row .col-lg-6 .playlist-img { border: solid 2px #acacac; background: #979797; height: 50px; width: 50px; float: left; margin: 0px; display: table-cell; }
+	.main-section .Search .row .col-lg-6 .list-name { color: #936ac7; font-size: 20px; display: table-cell; float: left; padding-left: 40px; padding-top: 10px; }
+	.main-section .Search .row .col-lg-6 .glyphicon { font-size: 28px; vertical-align: middle; color: #7f7f7f; display: table-cell; float: right; padding-right: 10px; padding-top: 10px; }
+	.main-section .Search .row .col-lg-6 .song-item { background-color: transparent; border-color: transparent; display: table; font-size: 16px; width: 100%; height: 80px; cursor: pointer; border-bottom: solid 1px #acacac; }
+	.main-section .Search .row .col-lg-6 .song-item .song-img { border: solid 2px #acacac; background: #979797; height: 50px; width: 50px; float: left; margin-top: 15px; display: table-cell; }
+	.main-section .Search .row .col-lg-6 .song-item .song-desc { color: #936ac7; font-size: 20px; display: table-cell; float: left; padding-top: 20px; padding-left: 20px; width: 60%; }
+	.main-section .Search .row .col-lg-6 .song-item .search-song-title { color: #936ac7; font-size: 20px; float: left; padding-left: 10px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 100%; text-align: left; max-width: 200px; }
+	.main-section .Search .row .col-lg-6 .song-item .search-song-artist { color: #acacac; font-size: 15px; float: left; padding-left: 10px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 100%; text-align: left; max-width: 200px; }
+	.main-section .Search .row .col-lg-6 .song-item button { background-color: transparent; border-color: transparent; font-size: 16px; height: 78px; cursor: pointer; padding-right: 5px; float: right; }
+	.main-section .Search .row .col-lg-6 .song-item .glyphicon { font-size: 28px; vertical-align: middle; color: #7f7f7f; display: table-cell; float: right; padding: 0px!important; }
+
+	.main-section .Playlist-detail { float: right; width: 100%; position: relative; margin: auto; top: 0px; background-color: #e8e0f4; padding-left: 3%; padding-right: 3%; display: none; }
+	.main-section .Playlist-detail .playlist-detail-header { float: right; width: 100%; margin: auto; padding-top: 10px; font-size: 0px; display: table}
+	.main-section .Playlist-detail .playlist-detail-name { color: #936ac7; font-size: 30px; float: left; padding-left: 15px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 80%; text-align: left; max-width: 380px; display: table-cell}
+	.main-section .Playlist-detail .playlist-detail-header button { font-size: 15px; float: left; width: 15%; display: table-cell; margin-top: 10px; }
+	.main-section .Playlist-detail .row .col-lg-6 .glyphicon { font-size: 28px; vertical-align: middle; color: #7f7f7f; display: table-cell; float: right; }
+	.main-section .Playlist-detail .row .col-lg-6 img { border: solid 2px #acacac; background: #979797; height: 50px; width: 50px; float: left; margin-top: 15px; display: table-cell; }
+	.main-section .Playlist-detail .row .col-lg-6 .song-lists .song-item { background-color: transparent; border-color: transparent; display: table; font-size: 16px; width: 100%; height: 80px; cursor: pointer; border-bottom: solid 1px #acacac; }
+	.main-section .Playlist-detail .row .col-lg-6 .song-lists .song-item .song-desc { color: #936ac7; font-size: 20px; display: table-cell; float: left; padding-top: 20px; padding-left: 10px; width: 50%; }
+	.main-section .Playlist-detail .row .col-lg-6 .song-lists .song-item .list-detail-song-title { color: #936ac7; font-size: 20px; float: left; padding-left: 10px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 100%; text-align: left; max-width: 200px; }
+	.main-section .Playlist-detail .row .col-lg-6 .song-lists .song-item .list-detail-song-artist { color: #acacac; font-size: 15px; float: left; padding-left: 10px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 100%; text-align: left; max-width: 200px; }
+	.main-section .Playlist-detail .row .col-lg-6 .song-lists .song-item button { background-color: transparent; border-color: transparent; font-size: 16px; height: 78px; cursor: pointer; padding-right: 2px; float: right; }
+	

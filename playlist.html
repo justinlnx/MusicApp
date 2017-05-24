@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Exercise 1</title>
+    <!-- <<Mobile Viewport Code>> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="navbar navbar-fixed-top" id="navbar-list"> 
+        <header>
+          <ul class="nav nav-tabs">
+            <li>
+              <button type="button">
+                <span class="glyphicon glyphicon-music" aria-hidden="true" id="navbarIcon"></span>
+                <span class="menu-text" id="navbarIconText">Library</span>
+              </button>
+            </li>
+            <li>
+              <button type="button">
+                <span class="glyphicon glyphicon-th-list" aria-hidden="true" id="navbarIcon"></span>
+                <span class="menu-text" id="navbarIconText">Playlists</span>
+              </button>
+            </li>
+            <li>
+              <button type="button">
+                <span class="glyphicon glyphicon-search" aria-hidden="true" id="navbarIcon"></span>
+                <span class="menu-text" id="navbarIconText">Search</span>
+              </button>
+            </li>
+          </ul>
+        </header>
+      </div>
+
+      <div class="main-section">
+        <section class="Library" id="librarySection">
+          <h1>a</h1> 
+          <div class="btn-group" id="library-sort-btns">
+            <ul>
+              <li>
+                <button type="button" class="btn btn-default librarySortButton sort-default">
+                  <span class="sort-by-artist">Sort by artist</span>
+                </button>
+              </li>
+              <li>
+                <button type="button" class="btn btn-default librarySortButton">
+                  <span class="sort-by-title">Sort by title</span>
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <ul class="song-lists" id="songListId">
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <div class="modal" id="modal-box">
+          <div class="modal-wrapper" id="modal-wrapper">
+            <div class="modal-header" id="modal-box-header">
+              <span class="modal-header-text", id="modal-box-header-text">Choose playlist</span>
+              <button type="button" class="close-btn">
+                <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+              </button>
+            </div>
+            <div class="modal-list" id="modal-box-list">
+            </div>
+          </div>
+        </div>
+
+        <div class="modal" id="modal-box-user">
+          <div class="modal-wrapper" id="modal-wrapper-user">
+            <div class="modal-header" id="modal-box-header-user">
+              <span class="modal-header-text", id="modal-box-header-text-user">Choose User</span>
+              <button type="button" class="close-btn-user">
+                <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+              </button>
+            </div>
+            <div class="modal-list" id="modal-box-list-user">
+            </div>
+          </div>
+        </div>
+
+        <section class="Playlists" id="playlistSection">
+          <h1>a</h1>      
+          <div class="btn-group" id="add-new-playlist">
+            <button type="button" class="btn btn-default" id="add-new-playlist-btn">
+              <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+              <span class="add-playlist">Playlist</span>
+            </button>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <ul class="button-lists" id="playlistButtonId">
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="Search" id="searchSection">
+          <h1>a</h1> 
+          <form class="navbar-form navbar-left" role="search" id="search-bar">
+            <div class="form-group">
+              <input type="text" class="form-control" id="serachInputId" placeholder="Search">
+            </div>
+          </form>
+          <div class="row">
+            <div class="col-lg-6">
+              <ul class="search-result-list" id="search-result-id">
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <div class="Playlist-detail" id="playlistDetailSection">
+          <h1>a</h1> 
+          <div class="playlist-detail-header">
+            <span class="playlist-detail-name">90's Mega Mix</span>
+            <button type="button" class="add-user-btn" id="add-user-btn-id"> 
+              <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+              <span class="add-user">User</span>
+            </button>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <ul class="song-lists" id="detailSongListId">
+                <li>
+                  <div class="song-item">
+                    <img src="grey_box.jpg" alt="image">
+                    <div class="song-desc">
+                      <span class="list-detail-song-title">My Paper Heart</span>
+                      <br>
+                      <span class="list-detail-song-artist">The All-American Rejects</span>
+                    </div>
+                    <button type="button" class="add-song-to-list-btn">
+                      <span class="glyphicon glyphicon-plus-sign"></span>
+                    </button>
+                    <button type="button">
+                      <span class="glyphicon glyphicon-play"></span>
+                    </button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="music-app.js"></script>
+  </body>
+</html>
